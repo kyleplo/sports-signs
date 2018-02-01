@@ -36,8 +36,9 @@ eval(Blockly.JavaScript.workspaceToCode(workspace));
 try {eval(document.getElementById("code").value);document.getElementById("error").innerHTML = ""}
 catch(error){document.getElementById("error").innerHTML = error};
 };
-var compressed = "data:image/svg+xml;base64," + btoa(compressSvg(mysvg));
+compressSvg();
+var compressed = "data:image/svg+xml;base64," + btoa(mysvg);
 document.getElementById("result").src = compressed;
 document.getElementById("download").href = compressed;
-document.getElementById("share").href = "./share.html#" + btoa(compressSvg(mysvg));
+document.getElementById("share").href = "./share.html#" + btoa(mysvg);
 }
