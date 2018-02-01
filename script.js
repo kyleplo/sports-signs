@@ -1,7 +1,7 @@
 var workspace;
 var options = ["sign","flag","helmet","football","baseball"];
 var svgs = [];
-for(var i = 0;i < options.length;i++){fetch("./" + options[i] + ".svg").then(function (r){svgs.push(r.text())})};
+for(var i = 0;i < options.length;i++){fetch("./" + options[i] + ".svg").then(function (r){return r.text()}).then(function (t){svgs.push(t)})};
 var mysvg = "";
 var colors = {patriots: {blue: "#0C2340",red: "#C8102E",silver: "#A2AAAD",white:"#FF5500"},eagles: {green: "#004851",black:"#000000",grey:"#54585A",silver:"#8D9093"}};
 function select(option){
