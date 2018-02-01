@@ -7,7 +7,7 @@
 <p>Want to make your own? <a href="./index.html">Get started!</a>.</p>
 <script>
 function load(){
-var svg = "data:xml+svg;base64," + location.hash.slice(1);
+var svg = "data:image/xml+svg;base64," + location.hash.slice(1);
 document.getElementById("result").src = svg;
 document.getElementById("download").href = svg;
 }
