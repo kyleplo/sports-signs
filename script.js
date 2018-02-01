@@ -1,5 +1,5 @@
 var workspace;
-var options = ["sign","flag","helmet","football","baseball"];
+var options = ["flag","sign","helmet","football","baseball"];
 var svgs = [];
 for(var i = 0;i < options.length;i++){fetch("./" + options[i] + ".svg").then(function (r){return r.text()}).then(function (t){svgs.push(t)})};
 var mysvg = "";
