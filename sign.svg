@@ -1,0 +1,14 @@
+<svg version="1.1" width="124" height="91" viewBox="-1 -1 124 91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- This is the background -->
+
+<path fill="none" stroke="black" stroke-width="5" d="M 183 136 L 300 136 L 300 220.250 L 183 220.250 L 183 136 Z " transform="matrix(1, 0, 0, 1, -180.25, -133)"/>
+
+<!-- This is the first line of text --> 
+<text fill="red" x="5" y="25" text-anchor="start" font-family="Arial" font-size="22" transform="matrix(1.295, 0, 0, 1.295, 14.5, 6.9)">GO</text>
+<!-- This is the second line of text -->
+<text fill="red" x="0" y="20" text-anchor="start" font-family="Arial" font-size="14" transform="matrix(1.3406, 0, 0, 1.3406, 18.55, 43.05)">TEAM</text>
+  
+<!-- This is the star -->
+<path fill="blue" stroke="blue" stroke-width="5" stroke-linecap="round" d="M 224.500 119.250 L 236 119.250 L 240.750 109.250 L 248 117.500 L 261 117.750 L 250.750 128 L 256 141.250 L 242 134.250 L 229.500 142.250 L 235.750 130.250 L 224.500 119.250 Z " transform="matrix(0.5344, 0, 0, 0.5344, -46.9, -37.3)"/>
+
+</svg>
