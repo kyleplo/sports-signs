@@ -34,7 +34,11 @@ mysvg = mysvg.replace(/<!--.+-->/g,"");
 }
 function run(type){
 if(type === "blockly"){
-eval(Blockly.JavaScript.workspaceToCode(workspace));
+var code = Blockly.JavaScript.workspaceToCode(workspace);
+eval(code);
+document.getElementById("code").removeAttribute("hidden");
+document.getElementById("char").innerHTML = code.length;
+document.getElementById("js").innerHTML = code;
 }else if(type === "js"){
 try {eval(document.getElementById("code").value);document.getElementById("error").innerHTML = ""}
 catch(error){document.getElementById("error").innerHTML = error};
